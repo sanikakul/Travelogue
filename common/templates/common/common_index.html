@@ -1,0 +1,99 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {% load staticfiles %}
+    <script src="{% static 'common/js/common.js' %}"></script>
+    <link rel="stylesheet" href="{% static 'common/css/common.css' %}">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+    <link rel="shortcut icon" href="{% static 'common/images/travelogue-square.jpg' %}"/>
+
+    {% block headcontent %}
+    {% endblock %}
+
+</head>
+<body>
+
+    <nav class="navbar bg-musty-blue white justify-content-between sticky-top navbar-expand">
+        <a class="navbar-brand travelogue-font-bold brand-header-font">Travelogue</a>
+        <div class="navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link white header-font" href="#">Discover</a>
+                </li>
+            </ul>
+        </div>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link white header-font" href="#">Help Center</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white header-font" href="#">Support</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link white" href="#">
+                    <i class="fas fa-user-circle"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <div>
+        <div class="sidebar bg-lavender">
+            <div style="width: 100%; height: 60px; text-align: center; padding: 10px 20px;">
+                <i class="fas fa-fire large-header-font travel-o-rama" style="line-height: 40px;"></i>
+                <span style="line-height: 30px;" class="menu-font white">
+                    Travel-o-rama
+                </span>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-ticket-alt subscriptions"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Subscriptions</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-heart loved"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Loved</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-swatchbook swatch-book"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Swatch Book</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-chalkboard draftlogues"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Draftlogues</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-map-marked travelogues"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Travelogues</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-envelope direct-messages"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Direct Messages</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-list-alt activity"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Activity</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-cog settings"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Settings</span></div>
+            </div>
+            <div class="sidebar-menu-element white">
+                <div class="bg-white lavender sidebar-menu-icon"><i class="fas fa-user account"></i></div>
+                <div class="sidebar-menu-text menu-font"><span>Account</span></div>
+            </div>
+        </div>
+        <div class="content bg-white">
+            {% block bodycontent %}
+            {% endblock %}
+        </div>
+    </div>
+
+</body>

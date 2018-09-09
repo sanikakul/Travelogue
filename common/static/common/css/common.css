@@ -1,0 +1,207 @@
+body {
+    font-family: 'Raleway', sans-serif !important;
+}
+
+body > div {
+    width: 100%;
+    height: calc(100% - 74px);
+}
+
+.travelogue-font {
+    font-family: 'Amatic SC', cursive;
+}
+
+.travelogue-font-bold {
+    font-weight: bold;
+    font-family: 'Amatic SC', cursive;
+}
+
+.brand-header-font {
+    font-size: 2rem !important;
+}
+
+.large-header-font {
+    font-size: 1.8rem;
+}
+
+.header-font {
+    font-size: 1.2rem;
+}
+
+.menu-font {
+    font-size: 1.2rem;
+}
+
+.body-heading {
+    font-size: 1.2rem;
+}
+
+.body-typical {
+    font-size: 1rem;
+}
+
+.travel-o-rama {
+    color: orangered;
+}
+
+.subscriptions {
+    color: #593F62;
+}
+
+.loved {
+    color: #D81E5B;
+}
+
+.swatch-book {
+    color: #e9ce2c;
+}
+
+.draftlogues {
+    color: #FE5F55;
+}
+
+.travelogues {
+    color: #087F8C;
+}
+
+.direct-messages {
+    color: #758E4F;
+}
+
+.activity {
+    color: #ba5c12;
+}
+
+.settings {
+    color: #820263;
+}
+
+.account {
+    color: #2F3061;
+}
+
+/* Color palette */
+
+.white {
+    color: #ffffff;
+}
+
+.bg-white {
+    background-color: #ffffff;
+}
+
+.creme {
+    color: #f1dac4;
+}
+
+.bg-creme {
+    background-color: #f1dac4;
+}
+
+.lavender {
+    color: #a69cac;
+}
+
+.bg-lavender {
+    background-color: #a69cac;
+}
+
+.musty-blue {
+    color: #474973;
+}
+
+.bg-musty-blue {
+    background-color: #474973;
+}
+
+.lunar-blue {
+    color: #161b33;
+}
+
+.bg-lunar-blue {
+    background-color: #161b33;
+}
+
+.midnight-blue {
+    color: #0d0c1d;
+}
+
+.bg-midnight-blue {
+    background-color: #0d0c1d;
+}
+
+/* Color palette end */
+
+/* Navbar */
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+.nav-link > i {
+    font-size: 1.8rem;
+}
+
+.navbar-brand {
+    cursor: pointer;
+}
+
+/* Navbar End */
+
+/* Sidebar */
+
+.sidebar {
+    height: 100%;
+    width: 300px;
+    float: left;"
+}
+
+.sidebar-menu-element {
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+    line-height: 40px;
+    font-size: medium;
+    cursor: pointer;
+}
+
+.sidebar-menu-icon {
+    width: 40px;
+    height: 40px;
+    float: left;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.sidebar-menu-icon > i {
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+
+.sidebar-menu-text {
+    height: 40px;
+    width: calc(100% - 40px);
+    float: right;
+    padding: 0 10px;
+    font-size: 1.2rem;
+}
+
+.sidebar-menu-text > span {
+    line-height: 40px;
+}
+
+.sidebar-menu-element:hover {
+    background-color: #D81E5B;
+}
+
+/* Sidebar End */
+
+/* Content */
+
+.content {
+    height: 100%;
+    width: calc(100% - 300px);
+    float: left;
+}
+
+/*Content End*/
