@@ -40,44 +40,76 @@ body > div {
     font-size: 1rem;
 }
 
-.travel-o-rama {
-    color: orangered;
+.trots {
+    color: #161b33;
+}
+
+.bg-trots {
+    background-color: #161b33;
 }
 
 .subscriptions {
-    color: #593F62;
+    color: #D81E5B;
 }
 
-.loved {
-    color: #D81E5B;
+.bg-subscriptions {
+    background-color: #d81e5b;
 }
 
 .swatch-book {
     color: #e9ce2c;
 }
 
+.bg-swatch-book {
+    background-color: #e9ce2c;
+}
+
 .draftlogues {
     color: #FE5F55;
+}
+
+.bg-draftlogues {
+    background-color: #FE5F55;
 }
 
 .travelogues {
     color: #087F8C;
 }
 
+.bg-travelogues {
+    background-color: #087F8C;
+}
+
 .direct-messages {
     color: #758E4F;
+}
+
+.bg-direct-messages {
+    background-color: #758E4F;
 }
 
 .activity {
     color: #ba5c12;
 }
 
+.bg-activity {
+    background-color: #ba5c12;
+}
+
 .settings {
     color: #820263;
 }
 
+.bg-settings {
+    background-color: #820263;
+}
+
 .account {
     color: #2F3061;
+}
+
+.bg-account {
+    background-color: #2F3061;
 }
 
 /* Color palette */
@@ -156,6 +188,33 @@ body > div {
     float: left;"
 }
 
+.sidebar-header-menu-element {
+    width: 100%;
+    height: 70px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+.sidebar-header-menu-element > div {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 0 5px;
+}
+
+.sidebar-header-menu-element > div:first-child {
+    text-align: right;
+}
+
+
+.sidebar-header-menu-element > div:nth-child(2) {
+    text-align: left;
+}
+
+.sidebar-header-menu-element > div > i, span {
+    line-height: 40px;
+}
+
 .sidebar-menu-element {
     width: 100%;
     height: 50px;
@@ -163,6 +222,8 @@ body > div {
     line-height: 40px;
     font-size: medium;
     cursor: pointer;
+    -webkit-transition: all .3s; /* Safari */
+    transition: all .3s;
 }
 
 .sidebar-menu-icon {
@@ -188,10 +249,11 @@ body > div {
 
 .sidebar-menu-text > span {
     line-height: 40px;
+    z-index: 1000;
 }
 
 .sidebar-menu-element:hover {
-    background-color: #D81E5B;
+    background-color: #a69cac;
 }
 
 /* Sidebar End */
